@@ -1,0 +1,40 @@
+name: SaungHome
+version: 1.0.0
+main: Odidak\SaungHome\Main
+api: 5.0.0
+author: Odidak
+description: Plugin untuk mengatur home, sethome, delhome, dan melihat daftar home yang disimpan pemain.
+
+commands:
+  sethome:
+    description: Set posisi home.
+    permission: saungmc.sethome.command
+  home:
+    description: Teleport ke home yang telah disimpan.
+    permission: saungmc.home.command
+  delhome:
+    description: Menghapus home yang telah disimpan.
+    permission: saungmc.delhome.command
+  listhome:
+    description: Melihat daftar home yang telah disimpan.
+    permission: saungmc.listhome.command
+  homelimit:
+    description: Mengecek limit dan informasi home.
+    permission: saungmc.homelimit.command
+    
+permissions:
+  saungmc.sethome.command:
+    description: Mengizinkan pemain untuk menggunakan /sethome.
+    default: true
+  saungmc.home.command:
+    description: Mengizinkan pemain untuk menggunakan /home.
+    default: true
+  saungmc.delhome.command:
+    description: Mengizinkan pemain untuk menggunakan /delhome.
+    default: true
+  saungmc.listhome.command:
+    description: Mengizinkan pemain untuk menggunakan /listhome.
+    default: true
+  saungmc.homelimit.command:
+    description: Mengizinkan pemain untuk menggunakan /homelimit.
+    default: true
